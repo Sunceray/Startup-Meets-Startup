@@ -1,0 +1,402 @@
+:root {
+	--primary-color: #333;
+	--secondary-color: #444;
+	--overlay-color: rgba(0,0,0,0.7); 
+}
+
+* {
+	box-sizing: border-box; 
+	/* doesn't add with to element */
+	margin: 0;
+	padding: 0;
+
+	
+}
+
+
+body {
+
+	font-family: 'Catamaran', sans-serif;
+	line-height: 1.6;
+	color: #333;
+	font-size: 1.1rem;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	
+}
+
+h1,h2,h3,h4 {
+	line-height: 1.3;
+}
+
+.wrap {
+
+	background: rgba(0,0,0,0.5) url('smswebsite/webimage3.jpg.PNG') no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	overflow: hidden;
+	background-blend-mode: overlay;
+}
+
+
+a { 
+   color: var(--secondary-color);
+   text-decoration: none;
+   /* responsib;e for links */
+}
+
+ul {
+	list-style: none;
+
+}
+
+img {
+
+   width: 100%;
+   /* take 100% of image */
+}
+
+
+.container {
+    /* Container class is responsible for styling of contents within nav bar */
+	max-width: 1100px;
+	/* responsible for responsiviness */
+	margin: auto;
+	overflow: hidden;
+	/* prevents things from breaking out of their container */
+	padding: 0 2rem;
+
+}
+
+.navbar   {
+
+	font-size: 2.0rem;
+	padding-top: 0;
+	padding-bottom: 0.3rem;
+
+}
+
+.navbar .container {
+
+	display: grid;
+	padding-top: 0px;
+	grid-template-columns: 1fr 1fr;
+	color: #4169e1;
+	/* Changes color of Startup Meets Startup in nav bar*/
+}
+
+.navbar .logo  {
+
+	font-size: 2rem;
+	color: #00008b;
+	/* responsible for color of "The Future of Dating" */
+}
+
+.navbar .nav   {
+
+	display: flex;
+   /* aligns items (Home & About) in nav bar side by side */
+	align-items: center;
+	justify-content: flex-end; 
+	justify-self: flex-end;
+
+}
+
+.navbar .nav a  {
+/* responsible for the design of "Home and About" located in nav bar */
+	padding: 0 2rem;
+	/* adds space in between the words home and about */
+	color: #00008b;
+
+
+}
+
+.navbar .nav a:hover {
+
+}
+
+
+
+.section-a  {
+
+	height: 100vh;
+	width: 100%;
+
+}
+
+.section-a .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* (2, 1fr) turns grid into two seperate columns */
+	grid-gap: 3rem;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.section-a h1 {
+	font-size: 5rem;
+	color: #00008b;
+	/* Responsible for color of text located in H1 */
+}
+
+.section-a p {
+	margin: 1rem 0;
+}
+
+/* Wave Container */
+.wave-container > svg {
+	display: block;
+}
+
+.wave-containerflip > svg {
+	display: block;
+	transform: rotate(180deg);
+}
+
+.btn {
+/* Responsible for the styling of "Read More" button" */
+	display: inline-block;
+	background: var(--primary-color);
+	color: #fff;
+	padding: 0.8rem 1rem;
+	border: none;
+	cursor: pointer;
+	font-size: 1.1rem;
+	border-radius: 30px;
+
+}
+
+
+.btn:hover {
+       background: var(--secondary-color);
+}
+
+
+/* Section B*/
+.section-b {
+	position: relative;
+	background: url("resize4.jpg") no-repeat bottom center/cover;
+	/* Grabs image two spces up in file */
+	height: 800px;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+
+} 
+.section-b-inner {
+
+	color: #fff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+	max-width: 860px;
+	padding: 5rem 0;
+}
+
+.section-b-inner h3 {
+
+	font-size: 2rem;
+}
+
+.section-b-inner h2 {
+
+	font-size: 5rem;
+	margin-top: 1rem;
+}
+
+.section-b-inner p {
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+/*Section C */
+
+section-c {
+
+	height: 100vh;
+}
+
+.section-c .gallery {
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	
+}
+
+
+ .section-c .gallery img,
+ .section-c .gallery a {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+/* Footer */
+.section-footer {
+	background-color: #00008b;
+	/*changes the background color of footer */
+	color: #ffffff;
+	padding: 4rem 0;
+}
+
+.section-footer .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	/*adds space between rows in grid*/
+
+}
+
+.section-footer h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	
+
+}
+
+.section-footer h3 {
+	margin-bottom: 0.7rem;
+
+
+}
+
+.section-footer a {
+	line-height: 1.9;
+	color: #ccc;
+}
+
+.section-footer a > i {
+	color: #ffffff;
+	/* Changes the color of social media icons located within footer */
+	margin-right: 1rem;
+
+}
+
+/* Email Form */
+.email-form      {
+	width: 65%;
+   /* adjusts the width of email text box */
+	display: inline-block;
+	background-color: #555;
+	position: relative;
+	border-radius: 20px;
+	line-height: 0;
+	margin-top: 1rem;
+}
+
+.email-form .form-control  {
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	font-size: 1rem;
+	color: #ddd;
+	background:-color: transparent;
+	font-family: inherit;
+	margin: 0;
+	padding: 0 9rem 0 1.5rem;
+	width: 100%;
+	height: 45px;
+	border-radius: 20px ;
+
+}
+
+.email-form .submit {
+	display: inline-block;
+	position: absolute;
+	/* moves submit over to the right*/
+	top:0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	background-color: #eee;
+	font-size: 1rem;
+	text-align: center;
+	margin:  0;
+	padding: 0;
+	outline: 0;
+	border:  0;
+	color: #333;
+	cursor: pointer;
+	border-radius: 0 20px 20px 0;
+	/* rounder corner in the bottom */
+}
+
+
+/* Utilities */
+.btn  {
+
+	display: inline-block;
+	background: var(--primary-color);
+	color: #fff;
+	padding: 0.8rem 1.5rem;
+	border: none;
+	cursor: pointer;
+	font-size: 1.1rem;
+	border-radius: 30px;
+	/*border-radius creates a rounded button*/
+}
+
+.btn:hover {
+	background: var(--secondary-color);
+}
+
+.overlay  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--overlay-color);
+}
+
+/* Media Queries */
+
+/* Used so website will automatically adjust oneself based on device used */
+@media(max-width: 700px) {
+/* any styles will pertain if 700 or less */
+.section-a .container    {
+	grid-template-columns: 1fr;
+	text-align: center;
+   }	
+
+   /*targets the 1st div with text*/
+   .section-a .container div:first-child {
+   	order: 2;
+
+   }
+
+   .section-a .container div:last-child {
+   	order: -1;
+
+   }
+
+   .section-a img {
+   	width: 80%;
+   	marign: auto;
+
+   }
+   .section-b-inner h2 {
+   	font-size: 3.5rem;
+
+   }
+
+.section-footer  {
+	padding: 2rem 0;
+
+}
+
+.section-footer .container {
+	grid-template-columns: 1fr;
+	text-align: center;
+  }
+
+  .section-footer div:nth-child(2) {
+  	/* when using mobile devices, company information will not appear */
+  	display: none;
+  }
+
+}
