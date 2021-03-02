@@ -1,0 +1,6 @@
+[build]
+   publish="dist"
+
+   1. Create folder for web host platform
+   2 .In folder write code located above
+   3. Commit to github etc

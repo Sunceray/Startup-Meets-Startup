@@ -179,11 +179,13 @@ img {
 	position: relative;
 	background: url("resize4.jpg") no-repeat bottom center/cover;
 	/* Grabs image two spces up in file */
-	height: 800px;
+	height: 900px;
+	/* Increase/Decrease height of image location in section b */
 	border-top: 5px solid white;
 	border-bottom: 5px solid white;
 
-} 
+}
+
 .section-b-inner {
 
 	color: #fff;
