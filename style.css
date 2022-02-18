@@ -63,7 +63,7 @@ img {
 	max-width: 1100px;
 	/* responsible for responsiviness */
 	margin: auto;
-	overflow: hidden;
+	overflow: auto;
 	/* prevents things from breaking out of their container */
 	padding: 0 2rem;
 
